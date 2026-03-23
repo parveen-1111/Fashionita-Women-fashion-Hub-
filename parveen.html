@@ -52,7 +52,114 @@
   </button>
 
 </div>
+<style>
+  .categories {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+  padding: 0 20px;
+}
 
+/* Tablet view */
+@media (max-width: 992px) {
+  .categories {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* Mobile view */
+@media (max-width: 576px) {
+  .categories {
+    grid-template-columns: 1fr;
+  }
+}
+
+.category-item img {
+  width: 100%;
+  height: 240px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.category-item p {
+  font-size: 16px;
+  font-weight: 600;
+  color: #333;
+  text-align: center;
+  margin-top: 8px;
+}
+
+.category-item {
+  transition: 0.3s;
+}
+
+.category-item:hover {
+  transform: scale(1.05);
+  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+}
+
+/* Carousel responsive */
+.carousel-item img {
+  height: 550px;
+  object-fit: cover;
+}
+
+/* Mobile carousel height */
+@media (max-width: 576px) {
+  .carousel-item img {
+    height: 250px;
+  }
+}
+</style>
+  <div class="feature">
+    <h2 class="heading-with-lines"> Categories</h2>
+    
+  <div class="categories">
+
+  <div class="category-item">
+    <img src="shopping (1).webp">
+    <p>Sarees</p>
+  </div>
+
+  <div class="category-item">
+    <img src="AD-2038_1.webp">
+    <p>Lehengas</p>
+  </div>
+
+  <div class="category-item">
+    <img src="shopping13.webp">
+    <p>Dupatta Sets</p>
+  </div>
+
+  <div class="category-item">
+    <img src="shopping122.webp">
+    <p>Party Wear </p>
+  </div>
+
+</div>
+  <div class="categories">
+
+  <div class="category-item">
+    <img src="ELEGANCE_READYMADE_SHARARAS_SET_480x480.webp">
+    <p>Ethnic Wear</p>
+  </div>
+
+  <div class="category-item">
+    <img src="qowqkf.webp">
+    <p>co-ord Set</p>
+  </div>
+
+  <div class="category-item">
+    <img src="f8e1ede62cf246d49ad4549221612512UR_w540_h720_q85.webp">
+    <p>Westran-wear</p>
+  </div>
+
+  <div class="category-item">
+    <img src="fjfjh.webp">
+    <p>Nightwaer </p>
+  </div>
+
+</div>
 <!-- Bootstrap JS -->
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 
