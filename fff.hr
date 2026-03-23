@@ -1,0 +1,20 @@
+// Callback in asynchronous
+const hello = () =>{
+    console.log("hello");
+}
+setTimeout(hello,3000);
+setTime(Callback,time to be code excute)
+function getData(dataId,getNextdata
+){
+    setTimeout(() =>{
+ console.log("data",dataId);
+ if(getNextdata){
+    getNextdata();
+ }
+    },2000);
+    
+
+}
+getData(1,()=>{
+    getData(2);
+});
